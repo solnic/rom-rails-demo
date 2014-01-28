@@ -1,0 +1,5 @@
+development:
+  default: 'memory://devel'
+
+test:
+  default: 'memory://test'

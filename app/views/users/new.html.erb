@@ -1,0 +1,8 @@
+<%= form_for user, url: [ :users ], method: 'post' do |f| %>
+  <fieldset>
+    <legend>Create new user</legend>
+    <%= f.text_field :id %>
+    <%= f.text_field :name %>
+    <%= f.submit %>
+  </fieldset>
+<% end %>

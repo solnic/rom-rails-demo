@@ -1,0 +1,21 @@
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Action</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.each do |user| %>
+      <%= render 'user', user: user %>
+    <% end %>
+  </tbody>
+  <tfoot>
+    <td colspan="2">
+      <%= link_to 'Add', [:new, :user] %>
+    </td>
+  </tfoot>
+</table>

@@ -1,0 +1,7 @@
+<%= form_for :user, url: user_path(user.id), method: 'put' do |f| %>
+  <fieldset>
+    <legend>Edit user</legend>
+    <%= f.text_field :name, value: user.name %>
+    <%= f.submit %>
+  </fieldset>
+<% end %>
